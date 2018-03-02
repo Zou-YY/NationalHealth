@@ -1,0 +1,110 @@
+.alertWrap, .confirmWrap , .promptWrap {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,5,55,.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    z-index: 99999999999;
+}
+.alert, .confirm, .prompt {
+    width: 20vw;
+    height: 18vh;
+    background: linear-gradient(to right top, #328fb8, #554eab);
+    margin: auto;
+    position: relative;
+    border-radius: 5px;
+    text-align: center;
+}
+.alertCon {
+    width: 80%;
+    text-align: center;
+    color: #fff;
+    font-size: 1.3vw;
+    line-height: 2vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.confirmCon {
+    width: 80%;
+    text-align: center;
+    color: #fff;
+    font-size: 1.3vw;
+    line-height: 2vw;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.alertBtn {
+    width: 4vw;
+    height: 3.2vh;
+    line-height: 3.2vh;
+    background: #00b1e5;
+    font-size: 1vw;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    right: 2.1vw;
+    bottom: 1.5vh;
+    border-radius: 3px;
+}
+.promptCon {
+    height: 5vh;
+    color: #fff;
+    font-size: 1.2vw;
+    line-height: 5vh;
+}
+#inputMsg {
+    width: 12.5vw;
+    height: 3vh;
+    line-height: 3vh;
+    font-size: 1.1vw;
+    padding-left: 0.5vw;
+    background: #2e5982;
+    caret-color: #fff;
+    margin-top: 1.5vh;
+    margin-left: 0.5vw;
+    border-radius: 2px;
+    color: #fff;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:#d8d8d8;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:#d8d8d8;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:#d8d8d8;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:#d8d8d8;
+}
+
+.promptBtn, .confirmBtn {
+    width: 5vw;
+    height: 3.2vh;
+    background: #00b1e5;
+    font-size: 1.1vw;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-top: 3.5vh;
+}
+/* 修改 */
+.confirmBtnWrap {
+    width: 100%;
+    position: absolute;
+    bottom: 1.5vh;
+}
+/* 修改结束 */
+.cfCancel, .pBtnCancel {
+    margin-left: 2.5vw;
+}

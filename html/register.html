@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>register</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="../css/loading.css">    
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/gVerify.js"></script>
+    <script src="../js/register.js"></script>
+    <script src="../js/loading.js"></script> 
+       
+</head>
+<body>
+    <div id="regHeader">
+        <div class="headerCon">
+            <h2>人口与发展综合决策模拟支持系统</h2>
+            <p>
+                <a href="#" class="login">登录</a>
+                <a href="#" class="register">注册</a>
+            </p>
+        </div>
+    </div>
+    <div id="regCon">
+        <div class="regMain">
+            <ul class="mainOption">
+                <li style="background: rgba(33, 50, 112 , 0.8); color: #fff;" id="rePassWord">找回密码</li>
+                <li id="userReg">用户注册</li>
+            </ul>
+            <!-- 用户注册 -->
+            <form action="" method="" name="" class="info regInfo"  autocomplete="off">
+                <p>
+                    <label for="userName" style="background-image: url(../img/Register/userName_03.jpg); "></label><input type="text" id="userName" placeholder="用户名（只能输入英文字母大小写与数字）" required pattern="^\w+$" title="只能输入英文字母大小写与数字" >
+                    <i>*</i>
+                    <!-- <span class="exist">用户名已存在</span> -->
+                    <!-- <span class="iconfont icon-duihao" style="color: #00fff0"></span> -->
+                    <span class="hint">英文与数字</span>
+                </p>
+                <p>
+                    <label for="nickName" style="background-image: url(../img/Register/userName_03.jpg); "></label><input type="text" id="nickName" placeholder="昵称（可以输入汉字、英文字母大小写与数字）" required pattern="[\u4e00-\u9fa5a-zA-Z0-9]+" title="可以输入汉字、英文字母大小写与数字" >
+                    <i>*</i>
+                    <span class="hint">汉字、英文与数字</span>
+                </p>
+                <p>
+                    <label for="passWord" style="background-image: url(../img/Register/passWord_03.jpg); "></label><input type="password" id="passWord" placeholder="密码为6-16位字母和数字组合" required pattern="^\w{6,16}$" title="密码为6-16位字母和数字组合" >
+                    <i>*</i>
+                    <u class="iconfont icon-close-eye"></u>
+                    <span class="hint">英文与数字</span>
+                </p>
+                <p>
+                    <label for="confirm" style="background-image: url(../img/Register/confirm_03.jpg); "></label><input type="password" id="confirm" placeholder="确认密码" required>
+                    <i>*</i>
+                    <u class="iconfont icon-close-eye"></u>
+                    <span class="hint">两次密码不同</span>
+                </p>
+                <p>
+                    <label for="call" style="background-image: url(../img/Register/call_03.jpg); "></label><input type="text" id="call" placeholder="请输入手机号" required pattern="^1[34578]\d{9}$" title="请输入正确格式的手机号">
+                    <span class="hint">手机号</span>
+                    <i>*</i>
+                </p>
+                <p>
+                    <label for="eMail" style="background-image: url(../img/Register/eMail_03.jpg); "></label><input type="text" id="eMail" placeholder="电子邮件地址" required pattern="^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$" title="请输入正确格式的电子邮件地址">
+                    <i>*</i>
+                    <span class="hint">电子邮箱</span>
+                </p>
+                <p>
+                    <label for="company" style="background-image: url(../img/Register/company_03.jpg); "></label><input type="text" id="company" placeholder="公司名称">
+                </p>
+                <p>
+                    <label for="identifying" style="background-image: url(../img/Register/identifying_03.jpg); "></label><input type="text" id="codeInput" placeholder="请输入验证码" style="width: 11vw;">
+                    <span  id="vContainer" style="display:inline-block; width: 7vw; height: 5vh; line-height: 3.3vh; vertical-align: middle; margin-left: 1vw;"></span>
+                </p>
+                <p>
+                    <input type="button" id="submit" style="width: 26vw; height: 3.5vh; background: url(../img/Register/submit_03.jpg) no-repeat; background-size: 100% 100%; border: none; margin-top: 2.5vh; border-radius: 3px; cursor: not-allowed;
+                    opacity: 0.6;" value="创建用户" disabled >
+                    <!-- url(../img/Register/submit_03.jpg) no-repeat -->
+                </p>
+            </form>
+
+            <!-- 找回密码 -->
+            <form action="" method="" name="" class="info rePassInfo" style="display: none" autocomplete="off">
+                <p>
+                    <label for="rePassUserName" style="background-image: url(../img/Register/userName_03.jpg); "></label><input type="text" id="rePassUserName" placeholder="登录名" required pattern="^\w+$" title="只能输入英文字母大小写与数字">
+                    <i>*</i>
+                </p>
+                <p>
+                    <label for="rePasseMail" style="background-image: url(../img/Register/eMail_03.jpg); "></label><input type="text" id="rePasseMail" placeholder="电子邮件地址" required pattern="^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$" title="请输入正确格式的电子邮件地址">
+                    <i>*</i>
+                </p>
+                <p>
+                    <label for="rePassPassWord" style="background-image: url(../img/Register/passWord_03.jpg); "></label><input type="password" id="rePassPassWord" placeholder="密码为6-16位字母和数字组合" required pattern="^\w{6,16}$" title="密码为6-16位字母和数字组合" >
+                    <i>*</i>
+                    <u></u>
+                </p>
+                <p>
+                    <label for="rePassConfirm" style="background-image: url(../img/Register/confirm_03.jpg); "></label><input type="password" id="rePassConfirm" placeholder="确认密码" required>
+                    <i>*</i>
+                    <u></u>
+                </p>
+                <p>
+                    <input type="button" id="rePassSubmit" style="width: 26vw; height: 3.5vh; background: url(../img/Register/submit_03.jpg) no-repeat; background-size: 100% 100%; border: none; margin-top: 3.5vh; cursor: pointer; border-radius: 3px;" value="确认修改" >
+                </p>
+            </form>
+        </div>
+    </div>
+    <div class="regConWrap">
+        <div class="regPopup">
+            <p>
+                <b></b><span>创建成功</span>
+            </p>
+            <button class="popupSure">确定</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+#header {
+    width: 100vw;
+    height: 6vh;
+    background: #0c85fd;
+}
+#header .tit {
+    float: left;
+    font-size: 1.25vw;
+    color: #fff;
+    padding: 1.7vh 9vw 0 1.25vw;
+}
+#header .nav {
+    float: left;
+    font-size: 1vw;
+}
+#header .nav li {
+    float: left;
+}
+#header .nav li dt {
+    padding: 2vh 1.25vw 0;
+    height: 4vh;
+    font-size: 1vw;
+    color: #fff;
+}
+#header .nav li:hover dt{
+    background: #0574e1;
+}
+#header .nav li dl dd {
+    display: none;
+    width: 100%;
+    height: 4.7vh;
+    background: #0574e1;
+    text-align: center;
+    line-height: 4.7vh;
+    color: #fff;
+    cursor: pointer;
+}
+#header .nav li dl dd:hover {
+    background: #036cd3;
+}
+#header .nav li dl dd:hover{
+    color: #3be0fe;
+}
+#header .nav li:hover dl dd {
+    display: block;
+}
+.navRel {
+    position: relative;
+}
+.navAbs {
+    position: absolute;
+}
+.navLiShi {
+    top: 6vh;
+}
+.navQingJing {
+    top: 10.7vh
+}
+.user {
+    float: right;
+    padding-top: 2vh;
+    padding-right: 1vw;
+    font-size: 1vw;
+    color: #fff;
+}
+.logOff {
+    margin-left: 1vw;
+    cursor: pointer;
+}
+#contect {
+    width: 100vw;
+    height: 76.3vh;
+    padding-top: 17.7vh;
+    background: url(../img/contentbg.jpg) no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+#contect .keChiXu {
+    width: 76vw;
+    margin: 0 auto;
+    display: none;
+}
+#contect .keChiXu a {
+    float: left;
+    height: 17.11vh;
+    margin: 0 0.5vw 2.7vh;
+}
+#contect a img {
+    height: 100%;
+}
+#contect .heXinBan, #contect .zongHe {
+    display: none;
+    width: 56vw;
+    margin: 0 auto;
+}
+#contect .heXinBan {
+    display: block;
+}
+#contect .heXinBan a, #contect .zongHe a {
+    float: left;
+    height: 18vh;
+    margin: 0 0.6vw 2.2vh;
+}
+#contect .yiLiaoJianKan {
+    display: none;
+    width: 56vw;
+    margin: 0 auto;
+}
+#contect .yiLiaoJianKan a {
+    float: left;
+    height: 18vh;
+    margin: 0 0.6vw 2.2vh;
+}
+
+
+
+
+/* 历史对比&情景模拟 */
+
+#contect a {
+    position: relative;
+}
+#contect a .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+#contect a .back li {
+    width: 100%;
+    height: 50%;
+    background: rgba(0, 50, 255, .3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: absolute;
+    font-size: 1.7vw;
+    cursor: pointer;
+}
+#contect a .back .liShi {
+    top: -50%;
+}
+#contect a .back .qingJing {
+    top: -50%;
+}
+#contect a .back li:hover {
+    background: rgba(0, 50, 255, .5);
+}

@@ -1,0 +1,114 @@
+
+/* 上传文件 */
+.conRight .importMask, .conRight .exportMask {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(255,255,255,.1);
+    z-index: 9999;
+    display: none;
+}
+.conRight .importMask .impCon, .conRight .exportMask .expCon {
+    width: 30vw;
+    height: 37vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to right top, #328fb8, #554eab);
+    z-index: 99999;
+}
+/* 数据导入 */
+
+.conRight .importMask .impCon h5 {
+    font-size: 0.8vw;
+    padding-top: 1.7vh;
+    padding-left: 1.3vw;
+}
+.conRight .importMask .impCon .impTit {
+    margin-top: 5vh;
+    margin-left: 7vw;
+    font-size: 1.1vw;
+}
+
+.conRight .importMask .impCon form {
+    width: 100%;
+    height: 93%;
+    padding-top: 7%;
+}
+.importMask .impCon #uploadFile {
+    width: 50%;
+    font-size: 1vw;
+    margin-left: 8.5vw;
+}
+.importMask .impCon #input {
+    margin-top: 1vh;
+    margin-left: 8.5vw;  
+    color: #fff;  
+}
+.importMask .impCon .demoDown {
+    font-size: 0.7vw;
+    position: absolute;
+    top: 25vh;
+    right: 5vw;
+    text-decoration:underline;
+}
+
+.conRight .importMask .impCon .impBtn {
+    width: 100%;
+    text-align: center; 
+    position: absolute;
+    bottom: 3vh;
+}
+.conRight .importMask .impCon .impBtn button {
+    width: 7vw;
+    height: 4vh;
+    background: #00b1e5;
+    color: #fff;
+    border: none;
+    outline: none;
+    margin: 0 1vw;
+    cursor: pointer;
+}
+/* 上传文件结束 */
+
+/* 数据导出 */
+.conRight .exportMask .expCon {
+    text-align: center;
+    height: 27vh;
+    padding-top: 3vh;
+}
+.conRight .exportMask .expCon h5 {
+    line-height: 6vh;
+    font-size: 1.2vw;
+}
+.conRight .exportMask .expCon .radioWrap {
+    margin-left: 4vw;
+}
+.conRight .exportMask .expCon li {
+    float: left;
+    margin-top: 3.3vh;
+    margin-left: 3.5vw;
+    font-size: 1vw;
+}
+.conRight .exportMask .expCon li input {
+    width: 1vw;
+    height: 1vw;
+}
+.exportMask .expCon .expBtnWrap {
+    margin-top: 8vh;
+}
+.exportMask .expCon .expBtnWrap button {
+    width: 7vw;
+    height: 4vh;
+    background: #00b1e5;
+    font-size: 1.1vw;
+    color: #fff;
+    border: none;
+    outline: none;
+    margin: 0 1vw;
+    cursor: pointer;
+}
+

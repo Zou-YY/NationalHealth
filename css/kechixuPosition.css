@@ -1,0 +1,90 @@
+/* 贫穷 */
+.pinQiong li {
+    width: 11%;
+}
+.pinQiong .pqPinBi, .pinQiong .pqRenShou, .pinQiong .pqQuanZeng {
+    height: 12.5%!important;
+}
+.pinQiong .pqJiXi, .pinQiong .pqGDPZeng {
+    top: 33.6%;
+    left: 9%;
+}
+.pinQiong .pqPinBi, .pinQiong .pqQuanZeng {
+    top: 30%;
+}
+.pinQiong .pqPinBi {
+    left: 27%;
+}
+.pinQiong .pqRenShou {
+    top: 49%;
+    left: 28%;
+}
+.pinQiong .pqChengJiao {
+    height: 14%!important;
+    top: 31%;
+    left: 44%;
+}
+.pinQiong .pqQiShou {
+    top: 65.3%;
+    left: 45%;
+}
+.pinQiong .pqQuanZeng {
+    left: 61.9%;
+}
+.pinQiong .pqGuoShengZong {
+    width: 13.7%;
+    top: 53%;
+    left: 63%;
+}
+.pinQiong .pqGDPZeng {
+    left: 78%;
+}
+
+/* 饥饿和粮食安全 */
+.jiELiangShi li {
+    width: 12%;
+}
+.jiELiangShi .jlQuanZeng, .jiELiangShi .jlKaZhi, .jiELiangShi .jlDanZhi, .jiELiangShi .jlWeiZhi, .jiELiangShi .jlRenZhi {
+    height: 12.5%!important;
+}
+.jiELiangShi .jlQuanZeng {
+    top: 25%;
+    left: 10%;
+}
+.jiELiangShi .jlLiangZong, .jiELiangShi .jlRenChan, .jiELiangShi .jlNongZong {
+    top: 48%;
+    left: 10.5%;
+}
+.jiELiangShi .jlRenChan {
+    top: 62%;
+}
+.jiELiangShi .jlNongZong {
+    left: 26.7%;
+}
+.jiELiangShi .jlRouXu {
+    top: 26.5%;
+    left: 52.5%;
+}
+.jiELiangShi .jlKaZhi, .jiELiangShi .jlDanZhi, .jiELiangShi .jlWeiZhi{
+    width: 7%;
+    top: 44%;
+    left: 42.7%;
+}
+.jiELiangShi .jlDanZhi {
+    left: 55.5%;
+}
+.jiELiangShi .jlWeiZhi {
+    width: 9%;
+    left: 68%;
+}
+.jiELiangShi .jlRenZhi {
+    width: 9%;
+    top: 44%;
+    left: 81.5%;
+}
+.jiELiangShi .jlShuiXu {
+    width: 12.8%;
+    top: 67.3%;
+    left: 53%;
+}
+

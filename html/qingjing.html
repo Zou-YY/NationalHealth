@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/qingjing.css">
+    <link rel="stylesheet" href="../css/position.css">
+    <link rel="stylesheet" href="../css/dataProStyle.css">
+    <link rel="stylesheet" href="../css/loading.css">
+    <link rel="stylesheet" href="../css/newStyle.css">
+    <link rel="stylesheet" href="../css/kechixuPosition.css">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/echarts.js"></script>
+    <script src="../js/jquery.nicescroll.js"></script>
+    <script src="../js/loading.js"></script>
+    <script src="../js/newStyle.js"></script>
+    <script src="../js/qingjing.js"></script>
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="header clearfix">
+        <h3 class="tit">人口与发展综合决策模拟支持系统</h3>
+        <i class="titi">|</i>
+        <span class="tits">模拟平台</span>
+        <a href="../index.html" class="home"></a>
+    </div>
+    <div id="qjmn">
+        <!-- 当前位置 -->
+        <p class="pos">您的当前位置：<span>国家核心</span>><span>情景模拟</span>><span>资源</span></p>
+        <!-- 方案 -->
+        <div class="inputName">
+            <input type="text" class="xmmc" placeholder="请输入项目名称（只能包含汉字、英文字母大小写与数字）" onkeyup="value=value.replace(/[^\w\u4E00-\u9FA5]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\w\u4E00-\u9FA5]/g,''))" >
+            <button class="save">保存</button>
+                <script>
+                    $(function(){
+                        $(".save").click(function(){
+                            // alert($(".xmmc").val());
+                        })
+                    })
+                </script>
+            <div class="fangAnWrap">
+                <button class="more"></button>
+                <div class="fangAn">
+                    <!-- <p class="fItem">
+                        <input type="checkbox" name="fangAn1" id="fangAn1">
+                        <label for="fangAn1">方案1</label>
+                    </p> -->
+                </div>
+                <div class="fnBtnWrap">
+                    <input type="button" value="编辑" class="btn edit">
+                    <input type="button" value="对比" class="btn contrast">
+                </div>
+            </div>
+        </div>
+        <div class="qjContect">
+            <div class="conLeft">
+                <!-- 政策变量 -->
+                <div class="bianLiang">
+                    <h4 class="blTit">人口政策变量</h4>
+                    <ul class="blBtnWrap">
+                        <li>服务业全要素生产率</li>
+                    </ul>
+                </div>
+                <div class="optionBtn">
+                    <div class="otBtnWrap">
+                        <button class="preBtn">上一项</button>
+                        <button class="nextBtn">下一项</button>
+                        <button class="runBtn">运行</button>
+                    </div>
+                </div>
+                <!-- 模拟结果 -->
+                <div class="jieGuo">
+                    <h4 class="jgTit">模拟结果</h4>
+                    <i class="mgfBtn"></i>
+                    <div class="jgImgWrap">
+                        <!-- 可持续 -->
+                        <!-- <img src="../img/kechixu/mnjg_pinqiong_01.jpg" alt="" style="width: 100%;height: 100%"> -->
+                        <img src="../img/kechixu/mnjg_jieliangshi_01.jpg" alt="" style="width: 100%;height: 100%">
+                        <!-- 核心 -->
+                        <!-- <img src="../img/hexin/mnjg_ziyuan_02.jpg" alt="" style="width: 100%;height: 100%"> -->
+                        <!-- <img src="../img/hexin/mnjg_renkou_02.jpg" alt="" style="width: 100%;height: 100%"> -->
+                        <!-- <img src="../img/hexin/mnjg_nengyuan_02.jpg" alt="" style="width: 100%;height: 100%"> -->
+                        <!-- <img src="../img/hexin/mnjg_jingji_02.jpg" alt="" style="width: 100%;height: 100%"> -->
+                        <!-- <img src="../img/hexin/mnjg_huanjing_02.jpg" alt="" style="width: 100%;height: 100%"> -->
+                        <!-- <img src="../img/hexin/mnjg_shehui_02.jpg" alt="" style="width: 100%;height: 100%"> -->
+                        <!-- 核心结束 -->
+                    </div>
+                    <div class="mask"></div>
+                    <div class="bigPic">
+                        <i class="close"></i>
+                        <!-- 添加bImgWrap class名 -->
+                <!-- 可持续 -->
+                        <!-- 贫穷 -->
+                        <!-- <div class="pinQiong bImgWrap">
+                            <img src="../img/kechixu/mnjg_pinqiong_01.jpg" alt="">
+                            <ul class="imgMask">
+                                <li class="pqJiXi">基尼系数</li>
+                                <li class="pqPinBi">贫困线下人口比例</li>
+                                <li class="pqRenShou">人均可支配收入</li>
+                                <li class="pqChengJiao">成人平均受教育年限</li>
+                                <li class="pqQiShou">期望寿命</li>
+                                <li class="pqQuanZeng">全要素生产增速</li>
+                                <li class="pqGuoShengZong">国内生产总值</li>
+                                <li class="pqGDPZeng">GDP增速</li>
+                            </ul>
+                        </div> -->
+                        <!-- 饥饿和粮食安全 -->
+                        <div class="jiELiangShi bImgWrap">
+                            <img src="../img/kechixu/mnjg_jieliangshi_01.jpg" alt="">
+                            <ul class="imgMask">
+                                <li class="jlQuanZeng">全要素生产率增速</li>
+                                <li class="jlLiangZong">粮食总产量</li>
+                                <li class="jlRenChan">人均粮食产量</li>
+                                <li class="jlNongZong">农业总产值</li>
+                                <li class="jlRouXu">肉类需求量</li>
+                                <li class="jlKaZhi">卡路里指数</li>
+                                <li class="jlDanZhi">蛋白质指数</li>
+                                <li class="jlWeiZhi">微量元素指数</li>
+                                <li class="jlShuiXu">水产品需求量</li>
+                                <li class="jlRenZhi">人均可支配收入</li>
+                            </ul>
+                        </div>
+                <!-- 可持续结束 -->
+                <!-- 核心版 -->
+                        <!-- 资源 -->
+                        <!-- <div class="ziYuan bImgWrap">
+                            <img src="../img//hexin/mnjq_ziyuan_02.jpg" alt="">
+                            <ul class="imgMask ziYuanMask">
+                                <li class="danWeiGDP">单位GDP耗水量</li>
+                                <li class="senLinmj">森林面积</li>
+                                <li class="jianSheyd">建设用地</li>
+                                <li class="nongYeyd">农业用地</li>
+                                <li class="zongYongsl">总用水量</li>
+                                <li class="senLinfgl">森林覆盖率</li>
+                                <li class="gengDimj">耕地面积</li>
+                                <li class="nongYeys">农业用水</li>
+                                <li class="juMinys">居民用水</li>
+                                <li class="gongYeys">工业用水</li>
+                            </ul>
+                        </div> -->
+                        <!-- 人口 -->
+                        <!-- <div class="renKou bImgWrap">
+                            <img src="../img/hexin/mnjg_renkou_02.jpg" alt="">
+                            <ul class="imgMask renKouMask">
+                                <li class="zongRenKou">总人口</li>
+                                <li class="qiWangShouMing">期望寿命（分性别）</li>
+                                <li class="pingJunQiWang">期望寿命</li>
+                                <li class="fifteen">15岁以下人口</li>
+                                <li class="fifTsix">15-64岁劳动年龄人口</li>
+                                <li class="fifTfif">16-59岁劳动年龄人口</li>
+                                <li class="sixteen">60岁以上人口</li>
+                                <li class="sixTfif">65岁以上人口</li>
+                                <li class="zongFuYang">总抚养比</li>
+                                <li class="laoRenFuYang">老人抚养比</li>
+                                <li class="erTongFuYang">儿童抚养比</li>
+                            </ul>
+                        </div> -->
+                        <!-- 能源 -->
+                        <!-- <div class="nengYuan bImgWrap">
+                            <img src="../img/hexin/mnjg_nengyuan_02.jpg" alt="">
+                            <ul class="imgMask nengYuanMask">
+                                <li class="nyRenJun">人均可支配收入</li>
+                                <li class="nyDianLixf">电力消费</li>
+                                <li class="nyDianLish">电力损耗</li>
+                                <li class="nyZongFa">总发电量</li>
+                                <li class="nyFengFa">风能发电量</li>
+                                <li class="nyMeiFa">煤炭发电量</li>
+                                <li class="nyShiFa">石油发电量</li>
+                                <li class="nyTianFa">天然气发电量</li>
+                                <li class="nyHeFa">核能发电量</li>
+                                <li class="nyKeFa">可再生能源发电占比</li>
+                                <li class="nyMeiXu">煤炭需求量</li>
+                                <li class="nyShiXu">石油需求量</li>
+                                <li class="nyTianXu">天然气需求量</li>
+                                <li class="nyTaiFa">太阳能发电量</li>
+                            </ul>
+                        </div> -->
+                        <!-- 经济 -->
+                        <!-- <div class="jingJi bImgWrap">
+                            <img src="../img/hexin/mnjg_jingji_02.jpg" alt="">
+                            <ul class="imgMask jingJiMask">
+                                <li class="jjGuoSheng">国内生产总值</li>
+                                <li class="jjLaoSheng">劳动生产率</li>
+                                <li class="jjShanJie">三产结构</li>
+                                <li class="jjShiYe">失业率</li>
+                                <li class="jjJingHuo">经济活动人口</li>
+                                <li class="jjNongZong">农业总产值</li>
+                                <li class="jjGongZong">工业总产值</li>
+                                <li class="jjFuZong">服务员总产值</li>
+                                <li class="jjZongJiu">总就业</li>
+                                <li class="jjShanJiu">三产就业结构</li>
+                                <li class="jjNongZongJiu">农业总就业</li>
+                                <li class="jjGongZongJiu">工业总就业</li>
+                                <li class="FuZongJiu">服务员总就业</li>
+                            </ul>
+                        </div> -->
+                        <!-- 环境 -->
+                        <!-- <div class="huanJing bImgWrap">
+                            <img src="../img/hexin/mnjg_huanjing_02.jpg" alt="">
+                            <ul class="imgMask huanJingMask">
+                                <li class="hjMeiXiao">煤炭消费量</li>
+                                <li class="hjRenPai">人均二氧化碳排放量</li>
+                                <li class="hjErSPai">二氧化硫排放量</li>
+                                <li class="hjShiXiao">使用消费量</li>
+                                <li class="hjErCPai">二氧化碳排放量</li>
+                                <li class="hjDanPai">单位GDP二氧化碳排放量</li>
+                                <li class="hjTianXiao">天然气消费量</li>
+                            </ul>
+                        </div> -->
+                        <!-- 社会 -->
+                        <!-- <div class="sheHui bImgWrap">
+                            <img src="../img/hexin/mnjg_shehui_02.jpg" alt="">
+                            <ul class="imgMask sheHuiMask">
+                                <li class="shZhengZhi">政府财政支出</li>
+                                <li class="shJiNi">基尼系数</li>
+                                <li class="shRenJunShou">人均可支配收入</li>
+                                <li class="shZhengTou">政府投资</li>
+                                <li class="shJiZhi">基础设施支出</li>
+                                <li class="shJiaoZhi">教育支出</li>
+                                <li class="shPinBi">贫困线下人口比例</li>
+                                <li class="shSiTou">私人投资</li>
+                                <li class="shZongTou">总投资</li>
+                                <li class="shGuoZong">国内生产总值</li>
+                                <li class="shJiMi">基础设施密度</li>
+                                <li class="shChengJiao">成人平均受教育年限</li>
+                                <li class="shChengShi">成人平均识字率</li>
+                            </ul>
+                        </div> -->
+                <!-- 核心版结束 -->
+                    </div>
+                </div>
+                <!-- 模拟结果 -->
+            </div>
+
+            <div class="conRight">
+                <strong class="dataTit">总和生育率</strong>
+                <!-- 下拉框 -->
+                <div class="selectWrap">
+                    <div class="selTop">
+                        <p class="select">2000</p>
+                        <span class="selectMore"></span>
+                    </div>
+                    <div id="boxscroll">
+                        <ul class="options">
+                            <li>2000</li>
+                            <li>2001</li>
+                            <li>2002</li>
+                            <li>2003</li>
+                            <li>2004</li>
+                            <li>2005</li>
+                            <li>2006</li>
+                            <li>2007</li>
+                            <li>2008</li>
+                            <li>2009</li>
+                            <li>2010</li>
+                            <li>2011</li>
+                            <li>2012</li>
+                            <li>2013</li>
+                            <li>2014</li>
+                            <li>2015</li>
+                            <li>2016</li>
+                            <li>2017</li>
+                            <li>2018</li>
+                            <li>2019</li>
+                        </ul>
+                    </div>
+                </div>
+               <!-- 下拉框结束 -->
+
+                <p class="dataBtn">
+                    <button id="dataImport">数据导入</button>
+                    <button id="dataExport">数据导出</button>
+                    <button id="dataEdit">编辑</button>
+                    <!-- 添加loading -->
+                    <button id="dataSave" onclick="loading()">保存</button>
+                </p>
+
+                <!-- 上传文件 -->
+                <div class="importMask">
+                    <div class="impCon">
+                        <h5>数据上传</h5>
+                        <p class="impTit">请选择上传文件：</p>
+                        <form id="uploadForm" class="fileForm" action="" method="POST"  enctype="multipart/form-data" target="framFile" onsubmit="return check();">
+                            <input type="file" id="uploadFile" name="roomFile"  accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" onchange="input.value=this.value">
+                            <input id="input" style="width:50%; height:30pt; background: rgba(255,255,255,0)"/>
+                            <a href="#" class="demoDown">下载文件模板</a>
+                            <p class="impBtn">
+                                <button id="fileCancel" >取消</button>
+                                <button id="fileSubmit">上传</button>
+                            </p>
+                        </form>
+                        <iframe id="framFile" name="framFile" style="display:none;"></iframe>
+                        
+                    </div>
+                </div>
+
+                <!-- 数据导出 -->
+                <div class="exportMask">
+                    <div class="expCon">
+                        <h5>选择文件格式</h5>
+                        <ul class="radioWrap clearfix">
+                            <li>
+                                <input type="radio" name="tableTyel" id="xls" value="xls">
+                                <label for="xls">xls</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="tableTyel" id="xlsx" value="xlsx">
+                                <label for="xlsx">xlsx</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="tableTyel" id="csv" value="csv">
+                                <label for="csv">csv</label>
+                            </li>
+                        </ul>
+                        <p class="expBtnWrap">
+                            <button class="expSure">确定</button>
+                            <button class="expCancel">取消</button>
+                        </p>
+                    </div>
+                </div>
+                <script>
+                    $(function(){
+                        $(".expSure").click(function(){
+                            alert($("input:radio:checked").val())
+                        })
+                    })
+                </script>
+
+                <!-- ECharts -->
+                <div class="dataChart"  id="main" auto-resize></div>
+                <!-- 表格 -->
+                <div class="tableWrap">
+                    <div class="dataTable">
+                        <table class="dTab" cellspadding = "0" cellspacing = "0">
+                            <thead>
+                                <tr>
+                                    <th>年份</th>
+                                    <th>人口</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2017</td>
+                                    <td>2017</td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <ul class="fList">
+                    <li>
+                        <span></span>
+                        <i>方案一</i>
+                    </li>
+                </ul>
+                <div class="chBtn">
+                    <button id="formBtn">表格</button>
+                    <button id="lineBtn" style="background: #0cc">折线</button>
+                    <button id="barBtn">柱状图</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="saveTc">
+        <i class="tcClose"></i>
+        <div class="tcCon">
+            <p class="tcText">已创人口流动项目，是否保存？</p>
+            <p class="tcBtnWrap">
+                <button class="tcCancle">取消</button>
+                <button class="tcSure">确定</button>
+            </p>
+        </div>
+    </div>
+    <div class="tcMask"></div>
+</body>
+</html>

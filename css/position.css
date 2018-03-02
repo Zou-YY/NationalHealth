@@ -1,0 +1,349 @@
+.bigPic .imgMask li {
+    font-size: 0px!important;
+}
+
+/* 资源定位 */
+.ziYuan .danWeiGDP {
+    width: 15.7%;
+    left: 16.3%;
+    top: 58.5%;
+}
+.ziYuan .senLinmj, .ziYuan .jianSheyd, .ziYuan .nongYeyd, .ziYuan .zongYongsl {
+    width: 10%;
+    left: 45%;
+}
+.ziYuan .senLinmj {
+    top: 5.4%;
+}
+.ziYuan .jianSheyd {
+    top: 18.8%;
+}
+.ziYuan .nongYeyd {
+    top: 32.7%;
+}
+.ziYuan .zongYongsl {
+    top: 58.3%;
+}
+
+.ziYuan .senLinfgl, .ziYuan .gengDimj, .ziYuan .nongYeys, .ziYuan .juMinys, .ziYuan .gongYeys {
+    width: 11.3%;
+    left: 72%;
+}
+.ziYuan .senLinfgl {
+    top: 5.5%;
+}
+.ziYuan .gengDimj {
+    top: 32%;
+}
+.ziYuan .nongYeys {
+    top: 51%;
+}
+.ziYuan .juMinys {
+    top: 68%;
+}
+.ziYuan .gongYeys {
+    top: 88%;
+}
+/* 资源结束 */
+
+/* 人口定位 */
+
+.renKou .zongRenKou {
+    width: 7%;
+    top: 48.8%;
+    left: 22.5%;
+}
+.renKou .qiWangShouMing {
+    width: 9.5%;
+    height: 9%!important;
+    top: 69.5%;
+    left: 21.2%;
+}
+.renKou .pingJunQiWang {
+    width: 9.5%;
+    top: 88.2%;
+    left: 22%;
+}
+.renKou .fifteen {
+    width: 12%;
+    height: 9%!important;
+    top: 6%;
+    left: 40.7%;
+}
+.renKou .fifTsix {
+    width: 14.5%;
+    height: 9%!important;
+    top: 23%;
+    left: 38.7%;
+}
+.renKou .fifTfif {
+    width: 14.5%;
+    height: 9%!important;
+    top: 40%;
+    left: 38.7%;
+}
+.renKou .sixteen {
+    width: 14.5%;
+    height: 9%!important;
+    top: 57.1%;
+    left: 38.5%;
+}
+.renKou .sixTfif {
+    width: 14.5%;
+    height: 9%!important;
+    top: 74%;
+    left: 38.5%;
+}
+.renKou .zongFuYang {
+    width: 9.5%;
+    top: 30.5%;
+    left: 59%;
+}
+.renKou .laoRenFuYang {
+    width: 11.5%;
+    top: 13%;
+    left: 69.7%;
+}
+.renKou .erTongFuYang {
+    width: 11.5%;
+    top: 49%;
+    left: 70.5%;
+}
+/* 人口结束 */
+/* 能源定位 */
+.nyRenJun {
+    width: 8.5%;
+    height: 10%!important;
+    top: 65.5%;
+    left: 18%;
+}
+.nyDianLixf, .nyZongFa, .nyTianFa, .nyTianXu{
+    top: 47.5%;
+}
+.nyDianLixf {
+    width: 8.5%;
+    left: 17.3%;
+}
+.nyDianLish {
+    width: 8.5%;
+    top: 23%;
+    left:27%;
+}
+.nyZongFa {
+    width: 8.5%;
+    left: 33%;
+}
+.nyFengFa {
+    width: 10.5%;
+    top: 69%;
+    left: 32%;
+}
+.nyMeiFa {
+    width: 10.5%;
+    top: 2.5%;
+    left: 52%;
+}
+.nyShiFa {
+    width: 10.5%;
+    top: 25.5%;
+    left: 52.2%;
+}
+.nyTianFa {
+    width: 12.5%;
+    top: 47%;
+    left: 50.3%;
+}
+.nyHeFa {
+    width: 10.5%;
+    top: 69%;
+    left: 52.2%;
+}
+.nyKeFa {
+    width: 14.5%;
+    height: 9.5%!important;
+    top: 86.5%;
+    left: 51%;
+}
+.nyMeiXu, .nyShiXu {
+    left: 71%;
+}
+.nyTianXu, .nyTaiFa {
+    left: 70%;
+}
+.nyMeiXu {
+    width: 10.5%;
+    top: 2.5%;
+}
+.nyShiXu{
+    width: 10.5%;
+    top: 25%;
+}
+.nyTianXu {
+    width: 12.5%;
+}
+.nyTaiFa {
+    width: 12.5%;
+    top: 69%;
+}
+/* 能源结束 */
+/* 经济定位 */
+.jjGuoSheng {
+    width: 12.5%;
+    left: 7.5%;
+    top: 71%;
+}
+.jjLaoSheng {
+    width: 10.5%;
+    left: 27.8%;
+    top: 48.5%;
+}
+.jjShanJie {
+    width: 8.5%;
+    left: 29%;
+    top: 71%;
+}
+.jjShiYe {
+    width: 7%;
+    left: 52.7%;
+    top: 8.8%;
+}
+.jjJingHuo, .jjNongZong, .jjGongZong, .jjFuZong {
+    width: 12.5%;
+    left: 50%;
+}
+.jjJingHuo, .jjShanJiu {
+    top: 27%;
+}
+.jjNongZong, .jjNongZongJiu {
+    top: 48.7%;
+}
+.jjGongZong, .jjGongZongJiu {
+    top: 71%;
+}
+.jjFuZong, .FuZongJiu {
+    bottom: 2%;
+}
+.jjZongJiu {
+    width: 7%;
+    left: 77.5%;
+    top: 9%;
+}
+.jjShanJiu {
+    width: 12.5%;
+    left: 74.5%;
+}
+.jjNongZongJiu {
+    width: 10.5%;
+    left: 75.7%;
+}
+.jjGongZongJiu {
+    width: 10.5%;
+    left: 75.8%;
+}
+.FuZongJiu {
+    width: 12.5%;
+    left: 74.8%;
+}
+/* 经济结束 */
+/* 环境 */
+.huanJingMask li {
+    width: 13%;
+}
+.hjMeiXiao {
+    top: 47.5%;
+    left: 19.5%;
+}
+.hjRenPai, .hjErSPai, .hjShiXiao, .hjErCPai, .hjDanPai {
+    left: 44.6%;
+}
+.hjRenPai {
+    height: 10%!important;
+    top: 5%;
+}
+.hjErSPai {
+    top: 23%;
+}
+.hjShiXiao {
+    top: 48%;
+}
+.hjErCPai {
+    top: 69%;
+}
+.hjDanPai {
+    height: 10%!important;
+    bottom: 5.5%;
+}
+.hjTianXiao {
+    left: 72.8%;
+    top: 47.5%;
+}
+/* 环境结束 */
+/* 财政定位 */
+.shZhengZhi {
+    width: 12.5%;
+    left: 12%;
+    top: 64.5%;
+}
+.shJiNi {
+    width: 8.5%;
+    left: 35.8%;
+    top: 4%;
+}
+.shRenJunShou {
+    width: 14.5%;
+    left: 33%;
+    top: 20%;
+}
+.shZhengTou {
+    width: 8.5%;
+    left: 35.8%;
+    top: 46.7%;
+}
+.shJiZhi {
+    width: 12.5%;
+    left: 33.7%;
+    top: 64.5%;
+}
+.shJiaoZhi {
+    width: 8.5%;
+    left: 35.7%;
+    bottom: 12%;
+}
+.shPinBi {
+    width: 8.5%;
+    height: 10%!important;
+    left: 56%;
+    top: 2%;
+}
+.shSiTou {
+    width: 8.5%;
+    left: 58%;
+    top: 27%;
+}
+.shZongTou {
+    width: 7%;
+    left: 56.7%;
+    top: 47%;
+}
+.shGuoZong, .shJiMi, .shChengJiao, .shChengShi {
+    width: 14%;
+}
+.shGuoZong {
+    left: 74%;
+    top: 47%;
+}
+.shJiMi {
+    left: 71%;
+    top: 65%;
+}
+.shChengJiao {
+    height: 10%!important;
+    left: 72.5%;
+    top: 79.8%;
+}
+.shChengShi {
+    width: 15%;
+    left: 73.3%;
+    bottom: 2.5%;
+}
+/* 财政结束 */

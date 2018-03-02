@@ -1,0 +1,561 @@
+body {
+    background: url(../img/mnBg.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+/* 头部 */
+.header {
+    width: 97.25vw;
+    height: 6vh;
+    line-height: 6vh;
+    background: linear-gradient(to right,#2c80a1, #484a96);
+    color: #fff;
+    padding: 0 1.375vw;
+    position: relative;
+}
+.header  .tit {
+    font-size: 1.25vw;
+    float: left;
+}
+.header  .titi {
+    padding: 0 1.25vw;
+    font-size: 1.25vw;
+    float: left;
+}
+.header  .tits {
+    font-size: 1vw;
+    float: left;
+}
+.header  .home {
+    width: 1.872vw;
+    height: 1.872vw;
+    background: url(../img/home_03.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 1.33vh;
+    right: 1.25vw;
+}
+
+#qjmn {
+    width: 97.25vw;
+    height: 94vh;
+    padding: 0 1.375vw;
+    color: #fff;
+}
+
+/* 当前位置 */
+#qjmn .pos {
+    padding-top: 2vh;
+    line-height: 1.55vh;
+    font-size: 0.875vw;
+}
+#qjmn .pos span {
+    padding: 0 0.625vw;
+}
+/* 方案列表 */
+#qjmn .inputName{
+    padding: 1.55vh 1vw 0;
+    margin-top: 1.55vh;
+    background: linear-gradient(to right,#2b80a1, #484a96);
+}
+/* 输入方案名 */
+#qjmn .inputName .xmmc {
+    width: 37.9vw;
+    height: 4vh;
+    background: #2e5982;
+    float: left;
+    padding-left: 0.625vw;;
+    color: #fff;
+    font-size: 0.875vw;
+}
+#qjmn .save {
+    margin-left: 1.25vw;
+    display: inline-block;
+    width: 5.25vw;
+    height: 4vh;
+    text-align: center;
+    line-height: 4vh;
+    background: #00b1e5;
+    color: #fff;
+    font-size: 0.875vw;
+    border: none;
+    cursor: pointer;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:#d8d8d8;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:#d8d8d8;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:#d8d8d8;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:#d8d8d8;
+}
+/* 方案列表 */
+.inputName .fangAnWrap {
+    height: 5.78vh;
+    line-height: 5.78vh;
+    font-size: 0.875vw;
+    overflow: hidden;
+    position: relative;
+}
+.inputName .fangAnWrap .more {
+    float: left;
+    width: 1vw;
+    height: 1vw;
+    top: 1.8vh;
+    left: 0.5vw;
+    background: url(../img/more_03.jpg) no-repeat;
+    background-size: 100% 100%;
+    border: none;
+    outline: none;
+    vertical-align: middle;
+    cursor: pointer;
+    position: absolute;
+    z-index: 10
+}
+.inputName .fangAnWrap .fangAn {
+    float: left;
+    width: 70vw;
+    background: linear-gradient(to right,#2b80a1, #405999);
+    position: absolute;
+    margin-left: 1.6vw;
+    z-index: 9;
+}
+.inputName .fangAnWrap .fangAn .fItem {
+    padding: 0 1.5vw;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+.inputName .fangAnWrap .fangAn .fItem input {
+    width: 1vw;
+    height: 1vw;
+    vertical-align: middle;
+}
+/* 删除按钮 */
+.inputName .fangAnWrap .fangAn .fItem .del {
+    float: right;
+    color: #d00;
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: -8px;
+    display: none;
+    padding: 0 5px;
+}
+.inputName .fangAnWrap .fnBtnWrap {
+    float: right;
+}
+.inputName .fangAnWrap .fnBtnWrap .btn{
+    width: 5vw;
+    height: 3.88vh;
+    background: #00b1e5;
+    border-radius: 2px;
+    font-size: 1.55vh;
+    color: #fff;
+    margin-right: 1vw;
+    cursor: pointer;
+}
+/* 方案结束 */
+
+#qjmn .qjContect {
+    width: 100%;
+    height: 73.33vh;
+    margin-top: 1.55vh;
+}
+#qjmn .qjContect .conLeft {
+    width: 26vw;
+    float: left;
+}
+/* 政策变量 */
+#qjmn .qjContect .conLeft .bianLiang {
+    width: 24vw;
+    height: 27.22vh;
+    background: linear-gradient(to right, #2b7d9d, #31719b);
+    padding: 0.875vw 1.66vh;
+}
+.conLeft .bianLiang .blTit, .conLeft .jieGuo .jgTit {
+    font-size: 0.875vw;
+    font-weight: bold;
+}
+.conLeft .bianLiang .blBtnWrap {
+    margin-top: 1vh;
+    width: 100%;
+}
+/* 政策变量按钮 */
+.conLeft .bianLiang .blBtnWrap li {
+    width: 42%;
+    margin:1.11vh 4% 0;
+    height: 3.55vh;
+    background: #00b1e5;
+    border-radius: 3px;
+    line-height: 3.55vh;
+    font-size: 0.875vw;
+    text-align: center;
+    float: left;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis; 
+    cursor: pointer;    
+}
+/* 选项卡按钮 */
+#qjmn .qjContect .conLeft .optionBtn {
+    width: 100%;
+    height: 7.55vh;
+    display: flex;
+}
+#qjmn .qjContect .conLeft .optionBtn .otBtnWrap {
+    margin: auto;
+}
+#qjmn .qjContect .conLeft .optionBtn button {
+    width: 5vw;
+    height: 3.88vh;
+    background: #00b1e5;
+    font-size: 0.875vw;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 0 0.5vw;
+}
+/* 选项卡按钮结束 */
+/* 结果 */
+#qjmn .qjContect .conLeft .jieGuo {
+    width: 24vw;
+    height: 30vh;
+    background: linear-gradient(to right, #29809e, #2f759b);
+    padding: 0.875vw 1.66vh;
+    position: relative;
+}
+/* 放大功能开始 */
+.conLeft .jieGuo .mgfBtn {
+    position: absolute;
+    width: 1.25vw;
+    height: 1.25vw;
+    background: url(../img/magnifierBtn_03.jpg) no-repeat;
+    background-size: 100% 100%;
+    top: 1.44vh;
+    right: 0.9375vh;
+    cursor: pointer;
+}
+.conLeft .jieGuo .jgImgWrap {
+    margin-top: 0.5vh;
+    width: 24vw;
+    height: 27.5vh;
+}
+    /* 遮罩 */
+.mask {
+    width: 100vw;
+    height: 100vh;
+    background: #2e6798;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    display: none;
+}
+    /* 放大后图片位置 */
+.bigPic {
+    position: fixed;
+    width: 69vw;
+    height: 70vh;
+    background: #00b1e5;
+    padding-top: 5.22vh;
+    bottom: 2.7vh;
+    left: 29.5vw;
+    z-index: 1000;
+    /* display: none; */
+}
+/* 定位修改 */
+.bigPic .bImgWrap {
+    width: 100%;
+    height: 100%;
+}
+.bigPic .bImgWrap img {
+    width: 100%;
+    height: 100%;
+}
+
+    /* 图片加按钮及定位 */
+    
+.bigPic .imgMask {
+    width: 100%;
+    height: 70vh;
+    position: absolute;
+    bottom: 0;
+}
+.bigPic .imgMask li {
+    height: 5.55%;
+    cursor: pointer;
+    position: absolute;
+    border: 1px solid #d00;
+}
+
+    /* 图片加按钮定位结束 */
+
+.bigPic .close {
+    width: 1.75vw;
+    height: 1.75vw;
+    background: url(../img/close_03.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    right: 1.5vw;
+    top: 1.2vh;
+    cursor: pointer;
+}
+.bigPic img {
+    width: 100%;
+    height: 100%;
+}
+/* 放大功能结束 */
+
+/* 右边容器 */
+#qjmn .qjContect .conRight {
+    float: right;
+    width: 69vw;
+    height: 73.33vh;
+    background: linear-gradient(to right, #30729b, #454c94);
+    position: relative;
+}
+
+/* ECharts */
+.conRight .dataTit {
+    margin-left: 2vw;
+    line-height: 4.22vh;
+    font-size: 0.875vw;
+    font-weight: bold;
+}
+
+
+.conRight .dataBtn {
+    float: right;
+    margin-right: 1.3125vw;
+    padding-top: 1.66vh;
+}
+.conRight .dataBtn button {
+    width: 6vw;
+    height: 3.88vh;
+    background: #00b1e5;
+    color: #fff;
+    font-size: 0.875vw;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 0.7vw
+}
+
+
+.conRight .dataChart {
+    width: 68vw;
+    height: 56vh;
+    margin: 4vh auto 0;
+    padding-bottom: 2vh;
+}
+
+/* EChearts方案列表 */
+.conRight .fList {
+    float: left;
+    padding-left: 10vw;
+}
+.conRight .fList li {
+    float: left;
+    font-size: 0.875vw;
+    padding: 0 5px;
+}
+.conRight .fList li span {
+    display: inline-block;
+    width: 0.875vw;
+    height: 0.875vw;
+    background: #04b0db;
+}
+/* EChearts方案列表结束 */
+.conRight .chBtn {
+    float: right;
+    margin-right: 1.375vw;
+}
+.conRight .chBtn button {
+    width: 5vw;
+    height: 3.88vh;
+    background: #00b1e5;
+    font-size: 0.875vw;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    margin-left: 0.7vw;
+    cursor: pointer;
+}
+/* 保存按钮弹窗 */
+.saveTc {
+    width: 30vw;
+    height: 25vh;
+    padding-top: 5vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    background: #00b1e5;
+    z-index: 99999;
+    display: none;
+}
+.saveTc .tcClose {
+    width: 1.25vw;
+    height: 1.25vw;
+    background: url(../img/close_03.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    right: 1.5vw;
+    top: 1.5vh;
+    cursor: pointer;
+}
+.saveTc .tcCon {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right top, #328fb8, #554eab);
+}
+.saveTc .tcCon .tcText {
+    font-size: .875vw;
+    color: #fff;
+    padding-top:6vh;
+    text-align: center; 
+}
+.saveTc .tcCon .tcBtnWrap {
+    text-align: center;
+}
+.saveTc .tcCon .tcBtnWrap button {
+    width: 7vw;
+    height: 4vh;
+    background: #00b1e5;
+    color: #fff;
+    border: none;
+    outline: none;
+    margin: 0 1vw;
+    margin-top: 10vh;
+    cursor: pointer;
+}
+    /* 弹窗遮罩 */
+    .tcMask {
+        width: 100vw;
+        height: 100vh;
+        background: #2e6798;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+        display: none;
+    }
+
+
+/* 表格 */
+.conRight .tableWrap {
+    width: 68vw;
+    height: 56vh;
+    margin: 4vh auto 2vh;
+    overflow-x: hidden;
+    display: none;
+}
+.conRight .dataTable {
+    width: 68vw;
+    /* width: calc(68vw + 15px); */
+    padding-right: 1vw;
+    height: 56vh;
+    overflow-y: auto;
+}
+/* ::-webkit-scrollbar{width:0px} */
+.conRight .dataTable .dTab {
+    width: 100%;
+    text-align: center;
+    border: 1px solid #1d326d;
+    color: #fff;
+}
+.conRight .dataTable .dTab th {
+    width: 50%;
+    height: 5.55vh;
+    background: #375891;
+    font-size: 1vw;
+    font-family: "微软雅黑";
+    font-weight: Regular;
+}
+.conRight .dataTable .dTab td {
+    width: 50%;
+    height: 4.66vh;
+    background: #386498;
+    border-top:1px solid #5062bd;
+    font-size: 0.875vw;
+}
+.conRight .dataTable .dTab tr td:first-child {
+    border-right: 1px solid #20396c;
+}
+
+
+
+
+/* 下拉框 */
+.selectWrap {
+    width: 8vw;
+    height: 3.5vh;
+    position: absolute;
+    top: 1vh;
+    left: 10vw;
+    z-index: 8;
+    font-size: 1vw;
+    
+}
+.selectWrap .selTop {
+    width: calc(9.5vw + 1px);
+    height: 1.5vw;
+    background: #4673ad;
+    border: 1px solid #4a7cbd;
+}
+.selectWrap .select {
+    float: left;
+    width: 8vw;
+    height: 1.5vw;
+    line-height: 1.8vw;
+    color: #fff;
+    text-align: center;
+    cursor: default;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.selectWrap .selectMore {
+    float: left;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-left: 1px solid #4a7cbd;
+    background: url(../img/selectDown.png) no-repeat center;
+    background-size: 60% 60%;
+}
+
+#boxscroll {
+    width: 9.5vw;
+    height: 35vh;
+    display: none;
+    border: 1px solid #868023;
+}
+#boxscroll .options {
+    width: 9.5vw;
+    text-align: center;
+}
+#boxscroll .options li {
+    height: 3.5vh;
+    line-height: 3.5vh;
+    background: rgba(18, 42, 59, 0.5);
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+#boxscroll .options li:hover {
+    background: rgba(18, 42, 59, 0.8);
+    cursor: pointer;
+}
